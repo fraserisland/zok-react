@@ -2,7 +2,8 @@
     "products": [
       {
         "id": 1,
-        "name": "Knob",
+        "type": "Gear Knob",
+        "name": "The Classic",
         "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
         "keywords": [
           "stuffed", "plush", "groot", "guardians of the galaxy"
@@ -15,7 +16,8 @@
       },
       {
         "id": 2,
-        "name": "Holder",
+        "type": "Cup Holder",
+        "name": "Kyusha Cup",
         "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
         "keywords": [
           "stuffed", "plush", "groot", "guardians of the galaxy"
@@ -28,7 +30,8 @@
       },
       {
         "id": 3,
-        "name": "Tsurikawa",
+        "type": "Tsurikawa",
+        "name": "The Devilish",
         "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
         "keywords": [
           "stuffed", "plush", "groot", "guardians of the galaxy"
@@ -41,6 +44,7 @@
       },
       {
         "id": 4,
+        "type": "Misc",
         "name": "Emergency Light",
         "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
         "keywords": [
@@ -54,7 +58,8 @@
       },
       {
         "id": 5,
-        "name": "Sticker",
+        "type": "Sticker",
+        "name": "Original Zokusha",
         "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
         "keywords": [
           "stuffed", "plush", "groot", "guardians of the galaxy"

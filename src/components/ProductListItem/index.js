@@ -1,31 +1,26 @@
 import React from 'react';
 
 import AddBtn from '../addBtn'
-import RemoveBtn from '../removeBtn'
 import './styles.css'
 
 const ProductListItem = (props) => {
     return ( 
-        <div className="list-item__container"> 
-            <h3>{props.product.name}</h3> 
-            <img 
-                height={100}
+        <div className="card__container"> 
+            <img className="card__img"
                 title={props.product.name}
                 src={`/images/${props.product.image}`} 
             />
-            <div>{props.product.description}</div>
-            <div>$ {props.product.price}</div>
-            <AddBtn 
-                cartItem={props.cartItem} 
-                product={props.product}
-                addToCart={props.addToCart} 
-            />
-            {
-                props.cartItem &&
-                <div>
-                    <p> quantity: {props.cartItem.quantity} </p>
-                </div>
-            }
+            <p className="card__title">{props.product.type}</p> 
+            <p className="card__name">{props.product.name}</p> 
+            <div className="card__desc">{props.product.description}</div>
+            <div className="card__price-button">
+                <AddBtn 
+                    cartItem={props.cartItem} 
+                    product={props.product}
+                    addToCart={props.addToCart} 
+                />
+                <p className="card__price">${props.product.price}</p>
+            </div>
         </div>
      );
 }
