@@ -1,0 +1,69 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Knob",
+        "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
+        "keywords": [
+          "stuffed", "plush", "groot", "guardians of the galaxy"
+        ],
+        "image": "knob.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 19.99
+      },
+      {
+        "id": 2,
+        "name": "Holder",
+        "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
+        "keywords": [
+          "stuffed", "plush", "groot", "guardians of the galaxy"
+        ],
+        "image": "cupholder.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 19.99
+      },
+      {
+        "id": 3,
+        "name": "Tsurikawa",
+        "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
+        "keywords": [
+          "stuffed", "plush", "groot", "guardians of the galaxy"
+        ],
+        "image": "tsurikawa.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 19.99
+      },
+      {
+        "id": 4,
+        "name": "Emergency Light",
+        "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
+        "keywords": [
+          "stuffed", "plush", "groot", "guardians of the galaxy"
+        ],
+        "image": "purplelight.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 19.99
+      },
+      {
+        "id": 5,
+        "name": "Sticker",
+        "description": "Lorem ipsum aoy sadi sardines are nice in my tummy yummy this is a rhyme thadf sdf",
+        "keywords": [
+          "stuffed", "plush", "groot", "guardians of the galaxy"
+        ],
+        "image": "sticker.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 19.99
+      }
+    ]
+}

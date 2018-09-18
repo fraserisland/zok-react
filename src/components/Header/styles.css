@@ -1,0 +1,23 @@
+.header__container{
+    overflow: hidden;
+    background-image: url('../../static/zokusha-header.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.header__text{
+    background: rgba(255, 255, 255, 0.8);
+    margin: 80px auto;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.header__subtitle{
+
+}
+
+.header__description{
+
+}

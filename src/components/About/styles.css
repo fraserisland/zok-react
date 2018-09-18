@@ -1,0 +1,8 @@
+.about__para{
+    display: flex;
+}
+
+.about__img{
+    height: 200px;
+    width: auto;
+}
