@@ -7,9 +7,10 @@
 }
 
 .navbar__container{
+    min-height: 90px;
     width: 100%;
     background: #fff;
-    padding: 10px 100px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,7 +116,6 @@ nav icon
     }
     .navbar{
         padding-top: 10px;
-        min-height: 90px;
     }
 }
 
