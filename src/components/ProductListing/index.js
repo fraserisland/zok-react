@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductListItem from '../ProductListItem'
+import Card from '../Card'
 import { connect } from 'react-redux'
 
 import './styles.css'
@@ -10,7 +10,7 @@ const ProductListing = (props) => {
             {
                 props.products.map( product =>
                     <div key={product.id}>
-                        <ProductListItem
+                        <Card
                             product={product} 
                             addToCart={props.addToCart}
                             removeFromCart={props.removeFromCart}

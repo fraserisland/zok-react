@@ -19,7 +19,7 @@ const About = (props) => {
                     </div>
                 </div>
             }
-            <p className="button" onClick={props.toggleReadMore}>{props.readMore ? 'Show less ': 'Show more' }</p>
+            <p className="link" onClick={props.toggleReadMore}>{props.readMore ? 'Show less ': 'Show more' }</p>
         </div>
     );
 }

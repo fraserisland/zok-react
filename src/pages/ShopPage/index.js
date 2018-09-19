@@ -7,7 +7,7 @@ import './styles.css'
 const HomePage = () => {
     return (  
         <div className="shop__container">
-            <h2> Coming Soon. </h2>
+            <ProductListing products = {data.products} />
         </div>
     );
 }

@@ -1,0 +1,9 @@
+.cart__holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart__card{
+    margin-bottom: 30px;
+}

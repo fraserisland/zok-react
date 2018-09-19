@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
+import Card from '../Card'
+import './styles.css'
 
 const cartTotal = (cart) => {
     let total = 0
@@ -21,18 +22,17 @@ const sortItems = (items) => {
     })
 } 
 
-
 const Cart = (props) => {
     return (
         <div>
-            <div> 
+            <div className="cart__holder"> 
                 {
                     props.cart.length > 0 ?
                     sortItems(props.cart).map(item => (
-                        <div key={item.id}>
-                            <p> {item.name} </p>
-                            <p> {item.quantity} </p>
-                            <p> ${item.price} </p>
+                        <div className="cart__card" key={item.id}>
+                        <Card
+                            product={item} 
+                        />
                             <button
                             onClick={() => props.addToCart(item)}
                             > + 
