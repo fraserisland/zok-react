@@ -7,6 +7,9 @@ body {
   padding: 0;
   font-family: sans-serif;
   width: 100%;
+  font-family: 'Rubik', sans-serif;
+  color: #282828;
+
 }
 
 .page__container {
@@ -16,11 +19,23 @@ body {
 }
 
 h1 {
+  font-family: 'Trirong', serif;
   color: #282828;
 }
 
 h2 {
+  font-family: 'Trirong', serif;
   color: #555;
+}
+
+h4 { 
+  color: #2d2d2d;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  line-height: 2em;
+  font-family: 'Trirong', serif;
 }
 
 p {
@@ -44,5 +59,8 @@ p {
   .button:hover{
       cursor: pointer;
       color: black;
+  }
+  .cursor {
+    cursor: pointer;
   }
 }

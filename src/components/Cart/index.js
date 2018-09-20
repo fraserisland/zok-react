@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import CartCard from '../CartCard'
+
 import './styles.css'
 
 const cartTotal = (cart) => {
@@ -49,7 +50,7 @@ const Cart = (props) => {
                     :
                     <p>NO ITEMS IN CART</p>
                 }
-                <p>total: ${ Math.round((cartTotal(props.cart) * 100)) / 100 }</p>
+                <h4 className="cart__total">sub-total <span className="cart__dollars">${ Math.round((cartTotal(props.cart) * 100)) / 100 }</span></h4>
             </div>
         </div>
     )
