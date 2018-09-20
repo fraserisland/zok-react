@@ -1,0 +1,36 @@
+.cart-card__container {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    border-top: 1px solid white;
+    padding: 20px 0 0 0;
+}
+
+.cart-card__img{
+    object-fit: cover;
+    height: 100%;
+    width: 100px;
+    margin-right: 25px;
+}
+
+.cart-card__price{
+    width: 200px;
+    margin: 0;
+    font-weight: 700;
+    font-size: .9rem;
+    padding-right: .3em
+}
+
+.cart-card__desc{
+    margin: 10px 0;
+}
+
+.cross-holder{ 
+ width: 100%;
+}
+
+.cross {
+    float: right;
+    width: 15px;
+    margin-right: 25px;
+}

@@ -1,7 +1,20 @@
 .cart__holder{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: rgba(150,150,150,0.3);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart__title{
+    color: #2d2d2d;
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    line-height: 2em;
 }
 
 .cart__card{

@@ -35,9 +35,8 @@ p {
 
 .button{
   padding: 5px;
-  /* color: #555; */
   height: 30px;
-  background-color: #fff7a3;
+  background-color: rgba(85, 85, 85, 0.4);
   border: none;
 }
 
