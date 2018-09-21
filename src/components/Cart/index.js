@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Card from '../Card'
+import CartCard from '../CartCard'
+
 import './styles.css'
 
 const cartTotal = (cart) => {
@@ -26,14 +27,16 @@ const Cart = (props) => {
     return (
         <div>
             <div className="cart__holder"> 
+                <h2 className="cart__title">My Bag</h2>
                 {
                     props.cart.length > 0 ?
                     sortItems(props.cart).map(item => (
                         <div className="cart__card" key={item.id}>
-                        <Card
+                        <CartCard
                             product={item} 
+                            removeAll={() => props.removeAllFromCart(item)}
                         />
-                            <button
+                   {        /* <button
                             onClick={() => props.addToCart(item)}
                             > + 
                             </button>
@@ -41,16 +44,13 @@ const Cart = (props) => {
                             onClick={() => props.removeFromCart(item)}
                             > - 
                             </button>
-                            <button
-                            onClick={() => props.removeAllFromCart(item)}
-                            > Remove all
-                            </button>
+                           */}
                         </div>
                     ))
                     :
                     <p>NO ITEMS IN CART</p>
                 }
-                <p>total: ${ Math.round((cartTotal(props.cart) * 100)) / 100 }</p>
+                <h4 className="cart__total">sub-total <span className="cart__dollars">${ Math.round((cartTotal(props.cart) * 100)) / 100 }</span></h4>
             </div>
         </div>
     )

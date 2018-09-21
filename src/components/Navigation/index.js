@@ -76,6 +76,8 @@ class Navigation extends React.Component{
                     </div>
                     <div onClick={this.ham} className={this.state.navOpen ? "navbar__links" : "empty"}>
                         <Link to="/" className="navbar__link"> Home </Link>
+                        <Link to="/shop" className="navbar__link"> Shop </Link>
+                        <Link to="/cart" className="navbar__link"> Cart </Link>
                     </div>
                 </div>
             </div>

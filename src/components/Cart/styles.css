@@ -1,9 +1,34 @@
 .cart__holder{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: rgba(150,150,150,0.3);
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart__title{
+    color: #2d2d2d;
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 2em;
 }
 
 .cart__card{
     margin-bottom: 30px;
+}
+
+.cart__total{
+    text-align: right;
+}
+
+.cart__total {
+    letter-spacing: 3px;
+}
+
+.cart__dollars {
+    margin-left: 30px;
 }
