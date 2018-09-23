@@ -9,7 +9,10 @@ body {
   width: 100%;
   font-family: 'Rubik', sans-serif;
   color: #282828;
+}
 
+.icon{
+  width: 34px;
 }
 
 .page__container {

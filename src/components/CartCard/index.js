@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './styles.css'
 import cross from './multiply.svg'
 import Select from 'react-select';
+import { connect } from 'react-redux'
 
 const options = [
     { value: 1, label: "1" },
@@ -9,9 +10,9 @@ const options = [
     { value: 3, label: "3" },
     { value: 4, label: "4" },
     { value: 5, label: "5" },
-    { value: 10, label: "6" },
-    { value: 15, label: "7" },
-    { value: 20, label: "8" }
+    { value: 10, label: "10" },
+    { value: 15, label: "15" },
+    { value: 20, label: "20" }
   ];
 
   const customStyles = {
@@ -28,6 +29,13 @@ class Card extends Component {
     state = {
         donkey: 1
     }
+
+    handleChange = (value) => {
+        this.props.product.newQty = value.value
+        this.props.updateQty(this.props.product)
+        console.log(value)
+    }
+
     render(){
         const { selectedOption } = this.state;
     return ( 
@@ -49,7 +57,7 @@ class Card extends Component {
                     styles={customStyles}
                     placeholder={this.props.product.quantity}
                     value={selectedOption}
-                    onChange={this.handleChange}
+                    onChange={(value) => this.handleChange(value)}
                     options={options}
                 />
                 </div>
@@ -61,5 +69,19 @@ class Card extends Component {
      );
     }
 }
- 
-export default Card;
+
+function mapStateToProps(state) {
+    return {
+        cart: state.cart,
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        updateQty: (item) => {
+            dispatch({ type: 'UPDATE_QTY', payload: item })
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Card)

@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../static/zokusha-logo.png'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+import cart from './shopping-cart-empty-side-view-svgrepo-com.svg'
 
 import './styles.css'
 
@@ -75,10 +76,10 @@ class Navigation extends React.Component{
 
                     </div>
                     <div onClick={this.ham} className={this.state.navOpen ? "navbar__links" : "empty"}>
-                        <Link to="/" className="navbar__link"> Home </Link>
-                        <Link to="/shop" className="navbar__link"> Shop </Link>
-                        <Link to="/cart" className="navbar__link"> Cart </Link>
+                        <Link to="/" className="navbar__link">Home</Link>
+                        <Link to="/shop" className="navbar__link navbar__shop">Shop</Link>
                     </div>
+                        <Link to="/cart" className="navbar__link navbar__cart"><img className="icon" src={cart} /> <span className="navbar__total">{this.cartTotal(this.props.cart)}</span></Link>
                 </div>
             </div>
         );

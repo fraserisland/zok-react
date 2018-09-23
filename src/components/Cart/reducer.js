@@ -19,6 +19,11 @@ const removeAllFromCart = (cart, item) => {
     return [...cartWithoutItem(cart, item)]
 }
 
+const updateQty = (cart, item) => {
+    const cartItem = itemInCart(cart, item)
+    return [...cartWithoutItem(cart, item), {...cartItem, quantity: cartItem.newQty }]
+}
+
 const cartReducer = (state=[], action) => {
     switch(action.type) {
         case 'ADD':
@@ -29,6 +34,9 @@ const cartReducer = (state=[], action) => {
 
         case 'REMOVE_ALL':
             return removeAllFromCart(state, action.payload)
+
+        case 'UPDATE_QTY':
+            return updateQty(state, action.payload)
 
         default: 
             return state

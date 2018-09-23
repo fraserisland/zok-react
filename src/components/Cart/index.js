@@ -32,19 +32,10 @@ const Cart = (props) => {
                     props.cart.length > 0 ?
                     sortItems(props.cart).map(item => (
                         <div className="cart__card" key={item.id}>
-                        <CartCard
-                            product={item} 
-                            removeAll={() => props.removeAllFromCart(item)}
-                        />
-                   {        /* <button
-                            onClick={() => props.addToCart(item)}
-                            > + 
-                            </button>
-                            <button
-                            onClick={() => props.removeFromCart(item)}
-                            > - 
-                            </button>
-                           */}
+                            <CartCard
+                                product={item} 
+                                removeAll={() => props.removeAllFromCart(item)}
+                            />
                         </div>
                     ))
                     :
